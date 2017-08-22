@@ -71,7 +71,7 @@ def prune_splits(splits, nb_prune):
 
 def load_1000_genomes(transpose=False, label_splits=None, feature_splits=None,
                       nolabels='raw', fold=0, norm=True,
-                      path="/data/lisatmp4/romerosa/datasets/1000_Genome_project/" ):
+                      path="/home/einarbmag/data/1000Genome/" ):
 
     # user = os.getenv("USER")
     print path

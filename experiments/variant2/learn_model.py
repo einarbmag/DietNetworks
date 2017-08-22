@@ -539,7 +539,7 @@ def main():
                         default='accuracy',
                         help='What monitored variable to use for early-stopping')
     parser.add_argument('--save_tmp',
-                        default= '/Tmp/'+ os.environ["USER"]+'/DietNetworks/' if not CLUSTER else
+                        default= '/tmp/'+ os.environ["USER"]+'/DietNetworks/' if not CLUSTER else
                             '$SCRATCH'+'/DietNetworks/',
                         help='Path to save results.')
     parser.add_argument('--save_perm',

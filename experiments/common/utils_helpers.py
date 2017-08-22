@@ -5,7 +5,7 @@ import dataset_utils as du
 
 def generate_1000_genomes_hist(transpose=False, label_splits=None,
                                feature_splits=None, fold=0, perclass=False,
-                               path = '/data/lisatmp4/romerosa/datasets/1000_Genome_project/'):
+                               path = '/home/einarbmag/data/1000Genome/'):
 
     """
     train, valid, test, _ = du.load_1000_genomes(transpose, label_splits,
@@ -59,7 +59,7 @@ def generate_1000_genomes_hist(transpose=False, label_splits=None,
 def generate_1000_genomes_bag_of_genes(
         transpose=False, label_splits=None,
         feature_splits=[0.8], fold=0,
-        path = '/data/lisatmp4/romerosa/datasets/1000_Genome_project/'):
+        path = '/home/einarbmag/data/1000Genome/'):
 
     train, valid, test, _ = du.load_1000_genomes(transpose, label_splits,
                                                  feature_splits, fold,
@@ -89,7 +89,7 @@ def generate_1000_genomes_bag_of_genes(
 
 def generate_1000_genomes_snp2bin(transpose=False, label_splits=None,
                                   feature_splits=None, fold=0,
-                                  path = '/data/lisatmp4/romerosa/datasets/1000_Genome_project/'):
+                                  path = '/home/einarbmag/data/1000Genome/'):
 
     train, valid, test, _ = du.load_1000_genomes_old(transpose, label_splits,
                                                      feature_splits, fold,
